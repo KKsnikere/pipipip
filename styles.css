@@ -1,0 +1,93 @@
+/* Stils virsraksta teksta un uzrakstiem virs attēla */
+header {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    z-index: 1;
+    color: white;
+    font-family: 'Pacifico', cursive; /* Fonta nosaukums, pielāgojiet atbilstoši savam izvēlam */
+}
+
+nav {
+    position: absolute;
+    top: 50px;
+    right: 250px;
+    z-index: 1;
+}
+
+/* Stils uzrakstiem "Sākums," "Ēdienkarte," "Par mums" un "Kontakti" */
+nav ul li {
+    display: inline; /* Lai elementi būtu vienā rindā */
+    margin-right: 20px; /* Atstarpe starp elementiem */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Pacifico', cursive; /* Fonta nosaukums, pielāgojiet atbilstoši savam izvēlam */
+}
+
+
+/* Stils fona attēliem un pārsegumiem */
+.background-image {
+    background-image: url('pelmeni.jpg'); /* Ceļš uz fona attēlu */
+    background-size: cover;
+    height: 800px;
+    position: relative;
+}
+
+/* Stils izkrītošam izvēlnes panelim */
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+    font-family: 'Pacifico', cursive;
+    overflow: hidden; /* Paslēpj tekstu, kas neietilpst kvadrātā */
+}
+
+/* Stils koncepcijas apraksta teksta konteineram */
+
+
+.about-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Stils teksta aprakstam */
+.description {
+    margin-left: 20px; /* Atstarpe no kreisās malas */
+}
+
+.description p {
+    font-size: 16px; /* Pielāgojiet fonta izmēru pēc vēlēšanās */
+    line-height: 1.5; /* Starp rindām attālums */
+}
+
+/* Stils seru fona blokam, kas aptver visu lapu */
+.page-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 21, 21, 0.76); /* Seru fona krāsa */
+    z-index: -1; /* Lai seru fona bloks būtu zemāk nekā teksta bloki */
+}
+.about-content h2 {
+    font-size: 24px; /* Pielāgojiet fonta izmēru pēc vēlēšanās */
+    margin-bottom: 10px; /* Atstarpe no teksta apakšas */
+}
